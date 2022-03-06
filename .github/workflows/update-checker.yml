@@ -20,10 +20,10 @@ env:
   REPO_BRANCH_HelloWorld: master
   REPO_PATH_HelloWorld : "helloworld"
 
-#on:
- # workflow_dispatch:
- # schedule:
-   # - cron: 0 */1 * * *
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 */2 * * *
 
 jobs:
   check:
