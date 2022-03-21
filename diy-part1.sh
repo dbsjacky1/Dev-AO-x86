@@ -123,7 +123,7 @@ if [ -s  "/tmp/cloud_ts_version" ]; then
 	cloud_kernel=`cat /tmp/cloud_ts_version | cut -d _ -f 2`
 	#固件下载地址
 	new_version=`cat /tmp/cloud_ts_version`
-	DEV_URL=hhttps://github.com/dbsjacky1/Dev-AO-x86/releases/download/${new_version}/openwrt_x86-64-${new_version}_dev_d.img.gz
+	DEV_URL=https://github.com/dbsjacky1/Dev-AO-x86/releases/download/${new_version}/openwrt_x86-64-${new_version}_dev_d.img.gz
 	DEV_UEFI_URL=https://github.com/dbsjacky1/Dev-AO-x86/releases/download/${new_version}/openwrt_x86-64-${new_version}_uefi-gpt_dev_d.img.gz
 	openwrt_dev=https://github.com/dbsjacky1/Dev-AO-x86/releases/download/${new_version}/openwrt_dev.md5
 	openwrt_dev_uefi=https://github.com/dbsjacky1/Dev-AO-x86/releases/download/${new_version}/openwrt_dev_uefi.md5
