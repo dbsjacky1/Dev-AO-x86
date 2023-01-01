@@ -243,7 +243,7 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
-      uses: dbsjacky/delete-workflow-runs@main
+      uses: dbsjacky1/delete-workflow-runs@main
       with:
         retain_days: 1
         keep_minimum_runs: 5
