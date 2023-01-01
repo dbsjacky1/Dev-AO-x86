@@ -24,7 +24,7 @@ env:
   REPO_BRANCH_PassWall: packages
   REPO_PATH_PassWall : "openwrt-passwall"
 
-#on:
+on:
   #workflow_dispatch:
   #schedule:
     #- cron: 0 */6 * * *
@@ -88,7 +88,7 @@ jobs:
         event-type: Source Code Update
 
     - name: Delete workflow runs
-      uses: dbsjacky/delete-workflow-runs@main
+      uses: dbsjacky1/delete-workflow-runs@main
       with:
         retain_days: 1
         keep_minimum_runs: 1
